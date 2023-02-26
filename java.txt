@@ -73,6 +73,9 @@ Abstraction:
     It is designed to be extened thus pushing the burde of implementation onto the subclass
     An abstract has no body only the signature of method is defined
     It is designed to be overwritten by a subclass
+    Abstract classes are ment to be templates and not designed to be used as is
+    Abstract classes and methods are templates that are meant to be implemented by their subclasses
+    If a class contains one or more abstract methods. the class must be also abstract
     (eg)
         public abstract class Shape{
             abstract double calculateArea();

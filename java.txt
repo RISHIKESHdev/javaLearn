@@ -1,3 +1,20 @@
+"Final" is a non-access modifier
+
+"sealed" classes restrict which other classes may extend them.
+Every permitted subclass must already exist and must explicitly extend the sealed class.
+Every permitted subclass is required to declare itself as sealed, non-sealed or final.
+    (eg) making Shape-class sealed to rectangle and circle only
+        public sealed class Shape Permits Rectangle,Circle{}
+        public class Circle extends Shape{}
+        public sealed class Rectangle extends Shape permits Square{}
+        public class Square extends Rectangle{}
+
+similarly "non-sealed" classes does opposite of "sealed" class
+    (eg) public non-sealed class Circle extends Shape{}
+
+"final" classes cannot havev any sub-classes.
+    (eg) public final class Square extends Rectangle{}
+
 wrapper class
 records
 variableargs
@@ -14,3 +31,10 @@ overload:
     Same name but change the signature of the method
 
 A child class can only inherit from one parent class
+
+Access limitation in Inheriance:
+    Constructors are not technically members of a class and are therefore not inherited
+    All public and protected methods and feilds in a superclass are inherited by its subclass
+    "Final" methods are inherited but cannot be overridden
+
+Polymorphism = "The ability to take multiple forms"

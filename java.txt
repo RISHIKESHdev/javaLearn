@@ -1,0 +1,16 @@
+wrapper class
+records
+variableargs
+
+Principles of OOPS:
+    Encapsulation
+    Inheritance
+    Polymorphism
+    Abstraction
+
+override:
+    Same signature but change the body of the method
+overload:
+    Same name but change the signature of the method
+
+A child class can only inherit from one parent class

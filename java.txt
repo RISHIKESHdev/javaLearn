@@ -80,3 +80,27 @@ Abstraction:
         public abstract class Shape{
             abstract double calculateArea();
         }
+
+Interface:
+    A stateless construct consisting of abstract behaviors to be implemented by other classes
+        Do not have Constructors
+        Fields are "final"
+        Must be implemented by other classes, not extended
+        Feilds inside Interface can't be encapsulated i.e it can only be public
+            Static: Can be accesssed from any other class without an object instantiation
+            Final: Value assigned at initialization and connot be changed
+            classes can implement multiple interfaces to achieve multiple inheritance
+        3 types of methods in Interface:
+            abstract
+            default
+            static
+        By default methods in an interface are public and abstract
+        "Default" methods
+            Methods within an interface that contain a default implementation
+        "Static" methods
+            Methods within an interface that contain implementation but are not inherited by implementing classes
+            As Interface can't be instantiated we can call them by interface name
+    it Cannot be instantiated
+    Can be implemented by classes and extended by other interfaces
+    Any class that implements an interface must implement all of its methods or declare itself abstract
+     

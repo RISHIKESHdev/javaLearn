@@ -103,4 +103,42 @@ Interface:
     it Cannot be instantiated
     Can be implemented by classes and extended by other interfaces
     Any class that implements an interface must implement all of its methods or declare itself abstract
-     
+
+Collections:
+    Data structures that hold a group of objects
+    Objects within a class are known as "Elements"
+    "Elements" can be
+        Unique/Duplicate
+        Ordered/NotOrdered
+    Collection itself is an interface and is the root of the hierarchy
+    Java does not provide any direct implementations of the collection interface
+    But there are other interfaces which inherit from collection.
+        The most common are
+            set
+            List
+            Queue
+    Set:
+        Collection of  unordered unique elements
+        using Set.of()  makes object immutable
+        Set.of() is a "Static" method
+    List:
+        Collection of ordered elements that can be accessed by position
+        There are two overloaded method for remove
+            remove by object : removes first found element
+            remove by index
+        To create a immutable list use "List.of()" method
+    Queue:
+        Collection of ordered elements that are processed in the order they were added (FIFO)
+    Map:(Not inherithed from collection interface)
+        Collection of unordered unique key-value pairs
+Collections Framework:
+    Unified architecture that provides data structures and algorithms to manipulate them.
+java.util.Collections:
+    A class that contains algorithms for working with Collections
+    (eg)
+        binarySearch
+        copy
+        frequency
+        reverse
+        shuffle
+        sort
